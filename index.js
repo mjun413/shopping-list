@@ -1,9 +1,9 @@
 function addNewItem(){
   $('#js-shopping-list-form').submit(function(event){
     event.preventDefault();
-    const newItemName = $('.js-shopping-list-entry').val();
+    const newItemName = $('#shopping-list-entry').val();
     $('.shopping-list').append(generateNewItemList(newItemName));
-    $('.js-shopping-list-entry').val('');
+    $('#shopping-list-entry').val('');
   });
 }
 
